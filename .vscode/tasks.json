@@ -9,6 +9,7 @@
                 "-g",
                 "${workspaceFolder}\\main.c",
                 "${workspaceFolder}\\matrix.c",
+                "${workspaceFolder}\\vector.c",
                 "-o",
                 "${workspaceFolder}\\main.exe"
             ],

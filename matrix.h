@@ -1,5 +1,6 @@
 // matrix.h
-
+#ifndef MATRIX_H
+#define MATRIX_H
 
 #include <stdio.h>
 #include <time.h>
@@ -37,7 +38,8 @@ int lu_decomposition(Matrix *A, Matrix **L, Matrix **U);
 //输入(参数)为矩阵A,向量b和空矩阵x(所以是二阶指针)，输出(参数)为解向量x
 int gaussian_elimination(Matrix *A, Matrix *b, Matrix **x);
 
-// 辅助函数
+
+
 // 行交换
 void swap_rows(Matrix *mat, int row1, int row2);
 
@@ -49,3 +51,5 @@ void add_scaled_row(Matrix *mat, int row1, int row2, double factor);
 
 //矩阵转置
 Matrix* matrix_inverse(Matrix *A);
+
+#endif // MATRIX_H
